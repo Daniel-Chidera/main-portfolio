@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+    <link rel="stylesheet" href="projects.css">
+
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- ANIMATION LINK -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+</head>
+
+<body>
+
+    <nav id="desktop-nav">
+        <div class="logo">Daniel Chidera</div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="index.html">About</a></li>
+                <li><a href="index.html#experience">Experience</a></li>
+                <li><a href="index.html#projects">Projects</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+                <li><a href="index.html#song">My Playlist</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- hamburger -->
+    <nav id="hamburger-nav">
+        <div class="logo">Daniel Chidera</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+                <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+                <li><a href="#song" onclick="toggleMenu()">My Playlist</a></li>
+
+            </div>
+        </div>
+    </nav>
+
+    <section id="profile">
+        <div class="section__text">
+            <h1 class="title">AURITHM MEDIA</h1>
+            <p class="section__text__p2">
+                Aurithm Media is a creative media company specializing in content creation, digital marketing, and media
+                production. We focus on delivering innovative and impactful solutions that help brands connect with
+                their audience effectively.
+            </p>
+            <div class="btn-container">
+                <button class="btn--bg btn-color-1" onclick="window.open('https://chairman-daniel.github.io/aurithm-media/')">
+                    See Live Link
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <section id="project">
+        <img src="./assets/screencapture-localhost-IT-Company-Website-main-IT-Company-Website-main-index-php-2025-01-17-00_26_54.png"
+            alt="">
+    </section>
+
+    <div class="project-details__content-main">
+        <div class="project-details__desc">
+            <h3 class="project-details__content-title">PROJECT OVERVIEW</h3>
+            <h1>Purpose:</h1>
+            <p class="project-details__desc-para">
+                The website was created to serve as a professional platform to showcase Aurithm Media's services,
+                values, and creative work, while engaging potential clients effectively.
+            </p>
+            <p class="project-details__desc-para">
+            <h1>FEATURES</h1>
+            <ul style="font-size: 14px; color: grey;">
+                <li style="list-style: square;">A modern, visually appealing design that reflects the brand's
+                    creativity.</li>
+                <li style="list-style: square;">Easy navigation for users to explore services and contact the company.
+                </li>
+                <li style="list-style: square;">Responsive layout, ensuring accessibility across all devices.</li>
+            </ul>
+            </p>
+        </div>
+        <div class="project-details__tools-used">
+            <h3 class="project-details__content-title">Tools Used</h3>
+            <div class="skills">
+                <div class="skills__skill">HTML</div>
+                <div class="skills__skill">CSS</div>
+                <div class="skills__skill">JavaScript</div>
+                <div class="skills__skill">GIT</div>
+                <div class="skills__skill">Facebook Ads</div>
+            </div>
+        </div>
+        <div class="project-details__links">
+            <h3 class="project-details__content-title">See Live</h3>
+            <a href="https://chairman-daniel.github.io/aurithm-media/" class="btn--med btn--theme project-details__links-btn" target="_blank">Live Link</a>
+        </div>
+    </div>
+
+    
+  <script src="script.js"></script>
+
+  <!-- AOS JS -->
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    // Initialize AOS
+    AOS.init();
+  </script>
+</body>
+
+</html>
