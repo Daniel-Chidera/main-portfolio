@@ -608,7 +608,7 @@ iframe{
 /* FOOTER SECTION */
 
 footer {
-  height: 26vh;
+  height: 16vh;
   margin: 0 1rem;
 }
 
@@ -669,4 +669,28 @@ footer p {
   100% {
       transform: rotate(360deg);
   }
+}
+
+#whatsappBtn {
+  position: fixed;
+  bottom: 80px;
+  right: 20px;
+  background-color: #25D366;
+  color: white;
+  border-radius: 50%;
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 26px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  z-index: 10000;
+  transition: transform 300ms ease, background-color 300ms ease;
+  text-decoration: none;
+}
+
+#whatsappBtn:hover {
+  background-color: #1ebe5d;
+  transform: scale(1.1);
 }

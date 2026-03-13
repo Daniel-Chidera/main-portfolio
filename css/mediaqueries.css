@@ -60,7 +60,7 @@
   }
   #contact,
   footer {
-    height: 40vh;
+    height: 25vh;
   }
   #profile {
     height: 60vh;
@@ -77,7 +77,9 @@
   .about-containers,
   .contact-info-upper-container,
   .btn-container {
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
+    flex-direction: column;
+    gap: 20px;
   }
   .contact-info-upper-container{
     flex-direction: column;
