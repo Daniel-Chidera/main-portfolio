@@ -1,132 +1,114 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Portfolio</title>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="mediaqueries.css" />
-    <link rel="stylesheet" href="projects.css">
-
-    <!-- font awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
-        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-
-    <!-- ANIMATION LINK -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NTDS — Daniel Chidera</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/mediaqueries.css" />
+  <link rel="stylesheet" href="css/project.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" crossorigin="anonymous" />
 </head>
-
 <body>
 
-    <nav id="desktop-nav">
-        <div class="logo">Daniel Chidera</div>
-        <div>
-            <ul class="nav-links">
-                <li><a href="index.html">About</a></li>
-                <li><a href="index.html#experience">Experience</a></li>
-                <li><a href="index.html#projects">Projects</a></li>
-                <li><a href="index.html#contact">Contact</a></li>
-                <li><a href="index.html#song">My Playlist</a></li>
-            </ul>
+  <nav id="desktop-nav">
+    <div class="logo">Daniel Chidera</div>
+    <ul class="nav-links">
+      <li><a href="index.html#about">About</a></li>
+      <li><a href="index.html#experience">Experience</a></li>
+      <li><a href="index.html#projects">Projects</a></li>
+      <li><a href="index.html#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <nav id="hamburger-nav">
+    <div class="logo">Daniel Chidera</div>
+    <div class="hamburger-menu">
+      <div class="hamburger-icon" onclick="toggleMenu()">
+        <span></span><span></span><span></span>
+      </div>
+      <div class="menu-links">
+        <li><a href="index.html#about" onclick="toggleMenu()">About</a></li>
+        <li><a href="index.html#experience" onclick="toggleMenu()">Experience</a></li>
+        <li><a href="index.html#projects" onclick="toggleMenu()">Projects</a></li>
+        <li><a href="index.html#contact" onclick="toggleMenu()">Contact</a></li>
+      </div>
+    </div>
+  </nav>
+
+  <main class="project-page">
+
+    <a href="index.html#projects" class="back-btn"><i class="fa-solid fa-arrow-left"></i> Back to Projects</a>
+
+    <div class="project-hero">
+      <img src="./assets/ntds-preview.png"
+        onerror="this.src='https://images.unsplash.com/photo-1497366216548-37526070297c?w=1200&h=500&fit=crop'"
+        alt="NTDS Website" class="project-hero-img" />
+    </div>
+
+    <div class="project-content">
+
+      <div class="project-header">
+        <h1>NTDS — NextGen Technova Digital Solutions</h1>
+        <div class="project-tech">
+          <span class="tech-tag">HTML5</span>
+          <span class="tech-tag">CSS3</span>
+          <span class="tech-tag">JavaScript</span>
         </div>
+      </div>
+
+      <div class="project-section">
+        <h2>Overview</h2>
+        <p>NTDS is a Lagos-based tech startup offering web development, mobile app development, and digital marketing services. I designed and built their full company website from scratch as a co-founder of the business — giving the startup a professional online presence to attract clients and showcase its offerings.</p>
+      </div>
+
+      <div class="project-section">
+        <h2>The Problem It Solves</h2>
+        <p>As a new tech startup in Lagos, NTDS needed a credible, professional website to establish trust with potential clients. Without a strong online presence, it's nearly impossible to compete in the digital services market. The website bridges that gap — presenting the company's services clearly and making it easy for clients to reach out.</p>
+      </div>
+
+      <div class="project-section">
+        <h2>Key Features</h2>
+        <ul class="project-list">
+          <li>Full multi-page website: Home, Services, About, Blog, and Contact</li>
+          <li>Services section showcasing Web Development, Mobile App Development, and Digital Marketing</li>
+          <li>Step-by-step process/workflow section explaining how the company works with clients</li>
+          <li>Technology stack showcase with brand icons</li>
+          <li>FAQ accordion for common client questions</li>
+          <li>Staff login portal for internal team use</li>
+          <li>Fully responsive — works on mobile, tablet, and desktop</li>
+          <li>Contact form for client inquiries</li>
+        </ul>
+      </div>
+
+      <div class="project-section">
+        <h2>How I Built It</h2>
+        <p>The entire site was built with vanilla HTML, CSS, and JavaScript — no frameworks — which kept it lightweight and fast. I focused on clean layout, readable typography, and smooth interactions. The responsive design was handled with CSS media queries to ensure the site looks great across all screen sizes. The site is hosted on GitHub Pages for fast, reliable, free deployment.</p>
+      </div>
+
+      <div class="project-section">
+        <h2>My Role</h2>
+        <p>I was the sole developer on this project, responsible for everything from design to deployment. This was a real-world project built for an actual business, not a personal exercise — which meant client expectations, brand consistency, and professional quality were all priorities from day one.</p>
+      </div>
+
+    </div>
+
+  </main>
+
+  <footer>
+    <nav>
+      <div class="nav-links-container">
+        <ul class="nav-links">
+          <li><a href="index.html#about">About</a></li>
+          <li><a href="index.html#experience">Experience</a></li>
+          <li><a href="index.html#projects">Projects</a></li>
+          <li><a href="index.html#contact">Contact</a></li>
+        </ul>
+      </div>
     </nav>
+    <p>Copyright &#169; 2025 Daniel Chidera. All Rights Reserved.</p>
+  </footer>
 
-    <!-- hamburger -->
-    <nav id="hamburger-nav">
-        <div class="logo">Daniel Chidera</div>
-        <div class="hamburger-menu">
-            <div class="hamburger-icon" onclick="toggleMenu()">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-            <div class="menu-links">
-                <li><a href="#about" onclick="toggleMenu()">About</a></li>
-                <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
-                <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
-                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
-                <li><a href="#song" onclick="toggleMenu()">My Playlist</a></li>
-
-            </div>
-        </div>
-    </nav>
-
-    <section id="profile">
-        <div class="section__text">
-            <h1 class="title">AUTOREFUEL: A SMART PETROL ORDERING SYSTEM</h1>
-            <p class="section__text__p2">
-                Autorefuel is an online platform designed to simplify the fuel ordering process. It allows users to
-                easily select their fuel type, customize the quantity, and securely place an order for delivery. With a
-                focus on convenience and user experience, Autorefuel ensures a smooth, responsive, and hassle-free
-                process for customers looking to refuel their vehicles without leaving home.
-
-            </p>
-            <div class="btn-container">
-                <button class="btn--bg btn-color-1" onclick="window.open('./assets/Nwankwo Daniel.pdf')">
-                    See Live Link
-                </button>
-            </div>
-        </div>
-    </section>
-
-    <section id="project">
-        <img src="./assets/screenshot-autorefuel.png"
-            alt="">
-    </section>
-
-    <div class="project-details__content-main">
-        <div class="project-details__desc">
-            <h3 class="project-details__content-title">PROJECT OVERVIEW</h3>
-            <h1>Purpose:</h1>
-            <p class="project-details__desc-para">
-                The Autorefuel website was developed to provide users with an easy, convenient platform for ordering
-                fuel online. The goal was to create a seamless, user-friendly experience that allows customers to select
-                their preferred fuel type, quantity, and delivery options, and complete the transaction securely.
-            </p>
-            <p class="project-details__desc-para">
-            <h1>FEATURES</h1>
-            <ul style="font-size: 14px; color: grey;">
-                <li style="list-style: square;">Fuel Selection & Customization: Users can choose fuel types and
-                    customize the quantity (in liters) to meet their needs.</li>
-                <li style="list-style: square;">Order Tracking: Customers can track their orders and delivery status
-                    through their user account.</li>
-                <li style="list-style: square;">Secure Payment System: The website offers secure, integrated payment
-                    options to ensure smooth and safe transactions.</li>
-                <li style="list-style: square;">Responsive Design: The website is fully optimized for mobile and
-                    desktop, ensuring an excellent user experience across all devices.</li>
-            </ul>
-            </p>
-        </div>
-        <div class="project-details__tools-used">
-            <h3 class="project-details__content-title">Tools Used</h3>
-            <div class="skills">
-                <div class="skills__skill">HTML</div>
-                <div class="skills__skill">CSS</div>
-                <div class="skills__skill">JavaScript</div>
-                <div class="skills__skill">MYSQL</div>
-                <div class="skills__skill">PHP</div>
-                <div class="skills__skill">GIT</div>
-                <div class="skills__skill">Facebook Ads</div>
-            </div>
-        </div>
-        <div class="project-details__links">
-            <h3 class="project-details__content-title">See Live</h3>
-            <a href="#" class="btn--med btn-color-1 project-details__links-btn" target="_blank">Live Link</a>
-        </div>
-
-
-        <script src="script.js"></script>
-
-        <!-- AOS JS -->
-        <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
-        <script>
-            // Initialize AOS
-            AOS.init();
-        </script>
+  <script src="script.js"></script>
 </body>
-
 </html>

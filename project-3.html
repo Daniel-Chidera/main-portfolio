@@ -1,127 +1,115 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Portfolio</title>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="mediaqueries.css" />
-    <link rel="stylesheet" href="projects.css">
-
-    <!-- font awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
-        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-
-    <!-- ANIMATION LINK -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Eatery 24/7 — Daniel Chidera</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/mediaqueries.css" />
+  <link rel="stylesheet" href="css/project.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" crossorigin="anonymous" />
 </head>
-
 <body>
 
-    <nav id="desktop-nav">
-        <div class="logo">Daniel Chidera</div>
-        <div>
-            <ul class="nav-links">
-                <li><a href="index.html">About</a></li>
-                <li><a href="index.html#experience">Experience</a></li>
-                <li><a href="index.html#projects">Projects</a></li>
-                <li><a href="index.html#contact">Contact</a></li>
-                <li><a href="index.html#song">My Playlist</a></li>
-            </ul>
+  <nav id="desktop-nav">
+    <div class="logo">Daniel Chidera</div>
+    <ul class="nav-links">
+      <li><a href="index.html#about">About</a></li>
+      <li><a href="index.html#experience">Experience</a></li>
+      <li><a href="index.html#projects">Projects</a></li>
+      <li><a href="index.html#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <nav id="hamburger-nav">
+    <div class="logo">Daniel Chidera</div>
+    <div class="hamburger-menu">
+      <div class="hamburger-icon" onclick="toggleMenu()">
+        <span></span><span></span><span></span>
+      </div>
+      <div class="menu-links">
+        <li><a href="index.html#about" onclick="toggleMenu()">About</a></li>
+        <li><a href="index.html#experience" onclick="toggleMenu()">Experience</a></li>
+        <li><a href="index.html#projects" onclick="toggleMenu()">Projects</a></li>
+        <li><a href="index.html#contact" onclick="toggleMenu()">Contact</a></li>
+      </div>
+    </div>
+  </nav>
+
+  <main class="project-page">
+
+    <a href="index.html#projects" class="back-btn"><i class="fa-solid fa-arrow-left"></i> Back to Projects</a>
+
+    <div class="project-hero">
+      <img src="./assets/eatery-preview.png"
+        onerror="this.src='https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=1200&h=500&fit=crop'"
+        alt="Eatery 24/7" class="project-hero-img" />
+    </div>
+
+    <div class="project-content">
+
+      <div class="project-header">
+        <h1>Eatery 24/7 — Restaurant Website</h1>
+        <div class="project-tech">
+          <span class="tech-tag">HTML5</span>
+          <span class="tech-tag">CSS3</span>
+          <span class="tech-tag">JavaScript</span>
+          <span class="tech-tag">PHP</span>
         </div>
+      </div>
+
+      <div class="project-section">
+        <h2>Overview</h2>
+        <p>Eatery 24/7 is a Lagos-based food brand that offers fine dining around the clock. I volunteered to build their full website, giving the restaurant a modern online presence where customers can browse the menu, place orders, and make reservations — all from their phone or computer.</p>
+      </div>
+
+      <div class="project-section">
+        <h2>The Problem It Solves</h2>
+        <p>Many small restaurants and food brands in Lagos operate without a proper website, relying solely on social media or word of mouth. This limits their reach and makes it harder for new customers to find them, see the menu, or make bookings. A dedicated website gives Eatery 24/7 credibility and makes the customer experience smoother and more professional.</p>
+      </div>
+
+      <div class="project-section">
+        <h2>Key Features</h2>
+        <ul class="project-list">
+          <li>Homepage with featured signature dishes and pricing (Jollof Rice, Goat Meat Peppersoup, Isi Ewu)</li>
+          <li>Full online menu page with categories and dish details</li>
+          <li>Online food ordering system</li>
+          <li>Table reservation system — customers can book a table directly from the site</li>
+          <li>About page describing the restaurant's story and values</li>
+          <li>Contact form with address, phone, and email</li>
+          <li>Social media links (Instagram, Facebook, Twitter)</li>
+          <li>Fully responsive design — optimised for mobile users</li>
+        </ul>
+      </div>
+
+      <div class="project-section">
+        <h2>How I Built It</h2>
+        <p>The site was built with HTML, CSS, and vanilla JavaScript. I paid special attention to the visual presentation of food — using high quality images to make the dishes look appealing. The layout was designed mobile-first, since most Lagos customers browse on their phones. The reservation and order pages use structured HTML forms to capture customer input cleanly.</p>
+      </div>
+
+      <div class="project-section">
+        <h2>My Role</h2>
+        <p>This was a volunteer project — I approached the brand and offered to build their site because I believed in what they were doing. I handled everything: design, development, content layout, and deployment. It was a great opportunity to apply my skills to a real business and build something that genuinely helps them grow.</p>
+      </div>
+
+    </div>
+
+  </main>
+
+  <footer>
+    <nav>
+      <div class="nav-links-container">
+        <ul class="nav-links">
+          <li><a href="index.html#about">About</a></li>
+          <li><a href="index.html#experience">Experience</a></li>
+          <li><a href="index.html#projects">Projects</a></li>
+          <li><a href="index.html#contact">Contact</a></li>
+        </ul>
+      </div>
     </nav>
+    <p>Copyright &#169; 2025 Daniel Chidera. All Rights Reserved.</p>
+  </footer>
 
-    <!-- hamburger -->
-    <nav id="hamburger-nav">
-        <div class="logo">Daniel Chidera</div>
-        <div class="hamburger-menu">
-            <div class="hamburger-icon" onclick="toggleMenu()">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-            <div class="menu-links">
-                <li><a href="#about" onclick="toggleMenu()">About</a></li>
-                <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
-                <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
-                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
-                <li><a href="#song" onclick="toggleMenu()">My Playlist</a></li>
-
-            </div>
-        </div>
-    </nav>
-
-    <section id="profile">
-        <div class="section__text">
-            <h1 class="title">QuickHeart: A Romantic Message Sender</h1>
-            <p class="section__text__p2">
-                The QuickHeart Project is a romantic web application designed to help users express love and affection in a creative, digital way. Inspired by the concept of Happie Pages, the app focuses on enabling users to create and send personalized romantic messages or digital cards for special occasions like anniversaries, birthdays, Valentine's Day, or just to say "I love you." 💌✨
-            </p>
-            <div class="btn-container">
-                <button class="btn--bg btn-color-1" onclick="window.open('./assets/Nwankwo Daniel.pdf')">
-                    See Live Link
-                </button>
-            </div>
-        </div>
-    </section>
-
-    <section id="project">
-        <img src="./assets/screencapture-file-C-Users-User-Desktop-QuickStart-QuickStart-index-html-2025-01-17-00_25_55.png"
-            alt="">
-    </section>
-
-    <div class="project-details__content-main">
-        <div class="project-details__desc">
-            <h3 class="project-details__content-title">PROJECT OVERVIEW</h3>
-            <h1>Purpose:</h1>
-            <p class="project-details__desc-para">
-                The purpose of the QuickHeart Project is to provide a platform where people can express love and affection in a meaningful and creative way. The app is designed to make sharing romantic messages and heartfelt gestures easy, personal, and impactful. <br> <br>
-
-                In a world where relationships are often strained by busy schedules and digital distractions, QuickHeart aims to bridge the emotional gap by enabling users to create thoughtful digital cards and messages for their loved ones. It’s more than just an app—it’s a tool for strengthening connections, fostering intimacy, and celebrating love. 💖
-            </p>
-            <p class="project-details__desc-para">
-            <h1>FEATURES</h1>
-            <ul style="font-size: 14px; color: grey;">
-                <li style="list-style: square;"><strong>Customizable Templates:</strong> Pre-designed templates for occasions like anniversaries, birthdays, and apologies.</li>
-                <li style="list-style: square;"><strong>Personalized Cards:</strong> Add custom text, emojis, photos, and music.</li>
-                <li style="list-style: square;"><strong>Special Effects:</strong> Animated effects like floating hearts.</li>
-                <li style="list-style: square;"><strong>Scheduling:</strong> Schedule cards and receive reminders for special dates.</li>
-                <li style="list-style: square;"><strong>Secure Accounts:</strong> Register, log in, and save your work securely.</li>
-                <li style="list-style: square;"><strong>Shareability:</strong> Send cards via email, WhatsApp, or download them.</li>
-                <li style="list-style: square;"><strong>Save and Reuse:</strong> Save drafts and edit them later.</li>
-            </ul>
-            </p>
-        </div>
-        <div class="project-details__tools-used">
-            <h3 class="project-details__content-title">Tools Used</h3>
-            <div class="skills">
-                <div class="skills__skill">HTML</div>
-                <div class="skills__skill">CSS</div>
-                <div class="skills__skill">JavaScript</div>
-                <div class="skills__skill">MYSQL</div>
-                <div class="skills__skill">PHP</div>
-                <div class="skills__skill">GIT</div>
-                <div class="skills__skill">Facebook Ads</div>
-            </div>
-        </div>
-        <div class="project-details__links">
-            <h3 class="project-details__content-title">See Live</h3>
-            <a href="#" class="btn--med btn-color-1 project-details__links-btn" target="_blank">Live Link</a>
-        </div>
-
-
-        <script src="script.js"></script>
-
-        <!-- AOS JS -->
-        <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
-        <script>
-            // Initialize AOS
-            AOS.init();
-        </script>
+  <script src="script.js"></script>
 </body>
-
 </html>
