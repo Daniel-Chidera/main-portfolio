@@ -384,7 +384,14 @@ article .icon {
   position: relative;
   text-align: center;
 }
- 
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
 .color-container {
   border-color: rgb(163, 163, 163);
   background: rgb(250, 250, 250);
@@ -393,40 +400,25 @@ article .icon {
   justify-content: space-between;
   transition: transform 300ms ease, box-shadow 300ms ease;
 }
- 
+
 .color-container:hover {
   transform: translateY(-6px);
   box-shadow: 0 12px 30px rgba(0, 0, 0, 0.1);
 }
- 
+
 .project-img {
   border-radius: 1rem;
   width: 100%;
   height: 180px;
   object-fit: cover;
 }
- 
+
 .project-title {
   margin: 0.75rem 0 0.5rem 0;
   color: black;
   font-size: 1.3rem;
 }
- 
-/* Project tag badge */
-.project-tag {
-  display: inline-block;
-  background: rgb(53, 53, 53);
-  color: white;
-  font-size: 0.7rem;
-  font-weight: 600;
-  padding: 0.25rem 0.75rem;
-  border-radius: 2rem;
-  margin-bottom: 0.75rem;
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
-}
- 
-/* Project description */
+
 .project-description {
   font-size: 0.9rem;
   color: rgb(100, 100, 100);
@@ -434,8 +426,7 @@ article .icon {
   margin-bottom: 1rem;
   text-align: left;
 }
- 
-/* Tech stack tags */
+
 .project-tech {
   display: flex;
   flex-wrap: wrap;
@@ -443,7 +434,7 @@ article .icon {
   justify-content: center;
   margin-bottom: 1rem;
 }
- 
+
 .tech-tag {
   background: rgb(240, 240, 240);
   color: rgb(53, 53, 53);
@@ -453,7 +444,7 @@ article .icon {
   border-radius: 1rem;
   border: 1px solid rgb(200, 200, 200);
 }
- 
+
 .project-btn {
   color: white;
   border-color: rgb(163, 163, 163);

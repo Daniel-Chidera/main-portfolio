@@ -132,4 +132,7 @@
     width: 85%;
     height: 400px;
   }
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
 }
