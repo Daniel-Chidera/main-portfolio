@@ -269,7 +269,8 @@
         </div>
         <h2 class="experience-sub-title project-title">Eatery 24/7 — Restaurant Site</h2>
         <p class="project-description">A full restaurant website built for a Lagos-based food brand. Includes an
-          online menu, food ordering system, table reservations, and contact form. Volunteer project for a real brand.</p>
+          online menu, food ordering system, table reservations, and contact form. Volunteer project for a real brand.
+        </p>
         <div class="project-tech">
           <span class="tech-tag">HTML5</span>
           <span class="tech-tag">CSS3</span>
@@ -411,6 +412,16 @@
     </nav>
     <p>Copyright &#169; 2025 Daniel Chidera. All Rights Reserved.</p>
 
+    <!-- TikTok Floating Button -->
+    <a id="tiktokBtn" href="https://www.tiktok.com/@danielchidera.com" target="_blank" title="Follow on TikTok">
+      <i class="fa-brands fa-tiktok"></i>
+    </a>
+
+    <!-- Phone Floating Button -->
+    <a id="phoneBtn" href="tel:+2347067060348" title="Call Me">
+      <i class="fa-solid fa-phone"></i>
+    </a>
+
     <!-- Arrow Up Button -->
     <button id="arrowUp" onclick="scrollToTop()"><i class="fa-solid fa-up-long"></i></button>
   </footer>
@@ -429,7 +440,9 @@
   <!-- AOS JS -->
   <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
   <script>
-    AOS.init({ once: true });
+    AOS.init({
+      once: true
+    });
 
     // Fix preloader — use window.load not DOMContentLoaded
     window.addEventListener("load", function () {
