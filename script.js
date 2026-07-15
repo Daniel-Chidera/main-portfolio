@@ -1,8 +1,8 @@
 function toggleMenu() {
-  const menu = document.querySelector(".menu-links");
-  const icon = document.querySelector(".hamburger-icon");
-  menu.classList.toggle("open");
-  icon.classList.toggle("open");
+    const menu = document.querySelector(".menu-links");
+    const icon = document.querySelector(".hamburger-icon");
+    menu.classList.toggle("open");
+    icon.classList.toggle("open");
 }
 
 // Get the button
@@ -31,8 +31,8 @@ function scrollToTop() {
 }
 
 
-// preloader
-document.addEventListener("DOMContentLoaded", function () {
-    document.getElementById("preloader").style.display = "none";
+window.addEventListener("load", function () {
+    const preloader = document.getElementById("preloader");
+    preloader.style.display = "none";
+    preloader.remove();
 });
-
